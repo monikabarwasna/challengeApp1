@@ -11,12 +11,12 @@ if (female)
         Console.WriteLine("kobieta poniżej 30 lat");
 
     }
-    else 
+    else
     {
         Console.WriteLine($"{name} lat {age}");
     }
 }
-else 
+else
 {
     if (age < 18)
     {
@@ -26,5 +26,5 @@ else
     {
         Console.WriteLine("pełnoletni mężczyzna");
     }
-    
+
 }
