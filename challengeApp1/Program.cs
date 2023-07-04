@@ -1,6 +1,8 @@
-﻿var name = "Ewa";
-var age = 33;
-bool female = true;
+﻿using System.ComponentModel.Design;
+
+var name = "Ewa";
+var age = 18;
+bool female = false;
 
 if (female)
 {
@@ -9,20 +11,20 @@ if (female)
         Console.WriteLine("kobieta poniżej 30 lat");
 
     }
-    else if (age > 30)
+    else 
     {
         Console.WriteLine($"{name} lat {age}");
-
     }
 }
-else if (!female)
+else 
 {
     if (age < 18)
     {
         Console.WriteLine("niepełnoletni mężczyzna");
     }
-    else if (age > 18)
+    else if (age >= 18)
     {
         Console.WriteLine("pełnoletni mężczyzna");
     }
+    
 }
