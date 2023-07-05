@@ -1,30 +1,68 @@
-﻿using System.ComponentModel.Design;
+﻿int number = 4594;
+string numberAsString = number.ToString();
+char[] letters = numberAsString.ToArray();
 
-var name = "Ewa";
-var age = 18;
-bool female = false;
+int conunter0 = 0;
+int conunter1 = 0;
+int conunter2 = 0;
+int conunter3 = 0;
+int conunter4 = 0;
+int conunter5 = 0;
+int conunter6 = 0;
+int conunter7 = 0;
+int conunter8 = 0;
+int conunter9 = 0;
 
-if (female)
+foreach (char letter in letters)
 {
-    if (age < 30)
+    if (letter == '0')
     {
-        Console.WriteLine("kobieta poniżej 30 lat");
-
+        conunter0++;
     }
-    else
+    else if (letter == '1')
     {
-        Console.WriteLine($"{name} lat {age}");
+        conunter1++;
+    }
+    else if (letter == '2')
+    {
+        conunter2++;
+    }
+    else if (letter == '3')
+    {
+        conunter3++;
+    }
+    else if (letter == '4')
+    {
+        conunter4++;
+    }
+    else if (letter == '5')
+    {
+        conunter5++;
+    }
+    else if (letter == '6')
+    {
+        conunter6++;
+    }
+    else if (letter == '7')
+    {
+        conunter7++;
+    }
+    else if (letter == '8')
+    {
+        conunter8++;
+    }
+    else if (letter == '9')
+    {
+        conunter9++;
     }
 }
-else
-{
-    if (age < 18)
-    {
-        Console.WriteLine("niepełnoletni mężczyzna");
-    }
-    else if (age >= 18)
-    {
-        Console.WriteLine("pełnoletni mężczyzna");
-    }
-
-}
+Console.WriteLine("O=" + conunter0);
+Console.WriteLine("1=" + conunter1);
+Console.WriteLine("2=" + conunter2);
+Console.WriteLine("3=" + conunter3);
+Console.WriteLine("4=" + conunter4);
+Console.WriteLine("5=" + conunter5);
+Console.WriteLine("6=" + conunter6);
+Console.WriteLine("7=" + conunter7);
+Console.WriteLine("8=" + conunter8);
+Console.WriteLine("9=" + conunter9);
